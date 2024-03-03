@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#3F51B5"
+        android:gravity="center"
+        android:text="Aplikasi Kasir"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="385dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/charger"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Charger" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20,0000"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/jumlahCharger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Jumlah Barang"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+            <CheckBox
+                android:id="@+id/mousePad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="mouse pad" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10,000"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/jumlahMousePad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Jumlah Barang"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="391dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/pulsa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Pulsa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10,000"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/jumlahPulsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Jumlah Barang"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+            <CheckBox
+                android:id="@+id/headset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Headset" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50,000"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/jumlahHeadset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Jumlah Barang"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+            <CheckBox
+                android:id="@+id/mouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Mouse" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100,000"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/jumlahMouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Jumlah Barang"
+                android:gravity="center"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/membershipRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Membership" />
+
+        <RadioButton
+            android:id="@+id/nonMembershipRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Non Membership" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/processButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Proses" />
+
+    <TextView
+        android:id="@+id/receiptTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="italic"/>
+
+</LinearLayout>
